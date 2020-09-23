@@ -1,3 +1,9 @@
+body {
+    background-color: blue;
+    background-size: cover;
+}
+
+
 header {
 
 
@@ -5,5 +11,5 @@ header {
 
 footer {
 
-    
+
 }
