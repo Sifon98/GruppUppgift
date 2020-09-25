@@ -10,14 +10,17 @@
     border: 1px solid black;
 }
 
-
+.boxwrapper, .bilderwrapper{
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 .this{
     float:right;
     display: grid;
     grid-template-columns: 4fr 1fr;
     border: 1px solid black;
-    height:100px;
-    width: 100px;
-    margin: 40px;
+    height:70px;
+    width: 70px;
+    margin: 50px;
 }
