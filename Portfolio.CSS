@@ -1,0 +1,23 @@
+.boxwrapper ,.bilderwrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    }
+
+
+.box , .header , .footer, .bilder{
+    margin: 10px;
+    height: 200px;      
+    border: 1px solid black;
+}
+
+
+
+.this{
+    float:right;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    border: 1px solid black;
+    height:100px;
+    width: 100px;
+    margin: 40px;
+}
