@@ -10,7 +10,7 @@ p,h1,h2,h3,h4,h5,h6 {
     width: 100%;
     align-items: center;
     top: 0;
-    transition: background 0.5s;
+    transition: background 0.3s;
     background-color: rgba(58, 58, 58, 0);
     color: white;
   }
@@ -115,6 +115,10 @@ p,h1,h2,h3,h4,h5,h6 {
     .navbar-links.active {
       display: flex;
     }
+  }
+
+  .cus-nav {
+      background-color: rgb(58, 58, 58) !important;
   }
 
   /* Header image, content */

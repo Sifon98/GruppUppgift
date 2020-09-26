@@ -10,3 +10,14 @@ window.addEventListener("scroll", function() {
         parallax.style.backgroundPositionY = offset * 0.5 + "px"
      }
 });
+
+window.addEventListener("scroll", function(){
+   let menuArea = document.getElementById('navbar');
+
+   if(window.pageYOffset > 100){
+      menuArea.classList.add("cus-nav");
+   }
+   else{
+      menuArea.classList.remove("cus-nav")
+   }
+})
