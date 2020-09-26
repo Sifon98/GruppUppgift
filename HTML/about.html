@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/Normalize.css">
     <link rel="stylesheet" href="../CSS/about.css">
+
+    <!-- Custom JS -->
+    <script src="../js/parallax.js" defer></script>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,7 +22,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav id="navbar">
         <a class="home" href="#page-top"><img src="../img/Logo.png"></a>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -39,12 +45,29 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead" id="parallax" style="background-position-y: 0px;">
         <div class="bg-color">
             <h1>ABOUT US</h1>
             <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
         </div>
     </header>
 
+    <!-- Page content -->
+    <div class="container-main">
+        <div class="container">
+	    	<header>header</header>
+		    <div class="box1">box1</div>
+    		<div class="box2">box2</div>
+	    	<div class="box3">box3</div>
+		    <div class="content">content</div>
+    		<div class="sidebar">sidebar</div>
+	    	<footer>
+		    	<div class="footer-box1">footer section 1</div>
+    			<div class="footer-box2">footer section 2</div>
+	    		<div class="footer-box3">footer section 3</div>
+		    	<div class="footer-box4">footer section 4</div>
+		    </footer>
+        </div>
+    </div>
 </body>
 </html>
