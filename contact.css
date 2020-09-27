@@ -3,13 +3,17 @@ html {
     background-size: cover;
 }
 
-.container {
-   display: grid;
-}
-
 header {
 
 
+}
+
+.container {
+    display: grid;
+ }
+
+.msgbox {
+    display: grid;
 }
 
 footer {
