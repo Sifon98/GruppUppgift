@@ -1,8 +1,11 @@
-body {
+html {
     background-color: blue;
     background-size: cover;
 }
 
+.container {
+   
+}
 
 header {
 
