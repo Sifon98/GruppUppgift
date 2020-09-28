@@ -5,7 +5,7 @@ html {
 
 body {
     width: 1000px;
-    height: 800px;
+    height: 1000px;
     background-color: white;
     margin: auto;
     
@@ -17,18 +17,32 @@ header {
 
 }
 nav {
-    
+    font-size: 20px;
 }
 
 .container {
     display: grid;
+    grid-template-areas:
+    'p1 p2'
+    'p3 p4';
+    text-align: center;
  }
+
+.p1 , .p2 , .p3 , .p4 {
+    margin: 10px 10px;
+    height: auto;
+    width: auto;
+
+}
+
 
 .msgbox {
     display: grid;
 }
 
 footer {
+    position: fixed;
+    bottom: 0%;
 
     
 }
