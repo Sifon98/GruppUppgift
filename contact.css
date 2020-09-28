@@ -18,6 +18,7 @@ header {
 }
 nav {
     font-size: 20px;
+    
 }
 
 .container {
@@ -36,6 +37,10 @@ nav {
     width: auto;
     float: right;
     
+}
+
+.imgnav1 {
+    padding: 10px auto;
 }
 
 
