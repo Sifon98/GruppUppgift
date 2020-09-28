@@ -5,7 +5,7 @@ html {
 
 body {
     width: 1000px;
-    height: 1000px;
+    height: auto;
     background-color: white;
     margin: auto;
     
@@ -29,21 +29,26 @@ nav {
  }
 
 .p1 , .p2 , .p3 , .p4 {
+    display: grid;
     background-color: rgba(41, 103, 238, 0.651);
     margin: 10px 10px;
     height: auto;
     width: auto;
-
 }
 
 
 .msgbox {
     display: grid;
+    margin: 10px 10px;
+    justify-content: center;
 }
 
-footer {
-    position: fixed;
-    bottom: 0%;
 
+footer {
+    
+    bottom: 0%;
+    height: 100px;
+    width: auto;
+    text-align: center;
     
 }
