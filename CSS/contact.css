@@ -1,12 +1,12 @@
 html {
-    background-color: blue;
+    background-image: url("../img/bg-blue1.jpg");
     background-size: cover;
 }
 
 body {
     width: 1000px;
     height: auto;
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.726);
     margin: auto;
     
 }
