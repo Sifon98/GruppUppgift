@@ -7,10 +7,11 @@ window.addEventListener("scroll", function() {
      }
      else {
         let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = offset * 0.5 + "px"
+        parallax.style.backgroundPositionY = offset * 0.4 + "px"
      }
 });
 
+//Scroll function, Navbar
 window.addEventListener("scroll", function(){
    let menuArea = document.getElementById('navbar');
 
@@ -20,4 +21,12 @@ window.addEventListener("scroll", function(){
    else{
       menuArea.classList.remove("cus-nav")
    }
+})
+
+//Toggle hamburger button
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
 })

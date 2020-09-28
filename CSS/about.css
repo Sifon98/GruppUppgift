@@ -3,6 +3,7 @@ p,h1,h2,h3,h4,h5,h6 {
 }
 
 /* NAVIGATION */
+/* =============================================================================== */
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -96,6 +97,8 @@ p,h1,h2,h3,h4,h5,h6 {
     #navbar {
       flex-direction: column;
       align-items: flex-start;
+      background-color: rgb(58, 58, 58);
+      text-align: center;
     }
   
     html {
@@ -103,8 +106,14 @@ p,h1,h2,h3,h4,h5,h6 {
     }
     
     .navbar-links ul {
+      margin-right: 0px;
       width: 100%;
       flex-direction: column;
+    }
+
+    .navbar-links li  {
+      margin: 1rem;
+      padding: 0rem 0rem 0rem 0rem;
     }
   
     .navbar-links li a {
@@ -120,8 +129,10 @@ p,h1,h2,h3,h4,h5,h6 {
   .cus-nav {
       background-color: rgb(58, 58, 58) !important;
   }
+/* =============================================================================== */
 
   /* Header image, content */
+  /* =============================================================================== */
   .masthead {
     display: flex;
     align-items: center;
@@ -134,7 +145,7 @@ p,h1,h2,h3,h4,h5,h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 700px;
+    height: 800px;
     margin-top: -78px;
     -webkit-animation: fade-in ease 0.7s;
     -webkit-animation-iteration-count: 1;
@@ -155,203 +166,145 @@ p,h1,h2,h3,h4,h5,h6 {
   }
 
   .bg-color {
+    margin-top: 50px !important;
     background-color: rgba(20, 20, 20, 0.486);
     height: 300px;
     width: 33% !important;
   }
+  /* =============================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .container-main {
-    height: 90vh;
-	width: 90vw;
-  }
-
-  .container {
-    margin-left: 6%;
-
-	display: grid;
-	gap: 15px;
-	width: 98%;
-	height: 100%;
-
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(4, 25%);
-    grid-template-areas:
-        "header header header header header header header header header header header header"
-		"box1 box1 box2 box2 box2 box2 box2 box2 box2 box2 box3 box3"
-		"cont cont cont cont cont cont cont cont cont sidebar sidebar sidebar"
-		"footer footer footer footer footer footer footer footer footer footer footer footer";
+/* Page content */
+/* =============================================================================== */
+section {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(250, 250, 250);
 }
 
-@media screen and (max-width: 1200px) {
-	.container {
-		margin-left: 5.5%;
-	
-		display: grid;
-		gap: 15px;
-		width: 98%;
-		height: 100%;
-	
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(4, 25%);
-		grid-template-areas:
-			"header header header header header header header header header header header header"
-			"box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3"
-			"cont cont cont cont cont cont cont cont sidebar sidebar sidebar sidebar"
-			"footer footer footer footer footer footer footer footer footer footer footer footer";
-	}
+.section-dark {
+  background-color: rgb(235, 235, 235);
 }
 
-@media screen and (max-width: 960px) {
-	.container {
-		margin-left: 5.5%;
-	
-		display: grid;
-		gap: 15px;
-		width: 98%;
-		height: 100%;
-	
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(5, 25%);
-		grid-template-areas:
-			"header header header header header header header header header header header header"
-			"box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3"
-			"cont cont cont cont cont cont sidebar sidebar sidebar sidebar sidebar sidebar"
-			"footer footer footer footer footer footer footer footer footer footer footer footer"
-			"footer footer footer footer footer footer footer footer footer footer footer footer";
-	}
+/* First section */
+.container-first {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 15% 15% 45% 10% 15%;
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". . . . title title title title . . . ."
+  ". . . text text text text text text . . ."
+  ". . . links1 . links2 links2 . links3 . . ."
+  ". . . . . . . . . . . .";
 }
 
-@media screen and (max-width: 768px) {
-	.container {
-		margin-left: 5%;
-	
-		display: grid;
-		gap: 15px;
-		width: 98%;
-	
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(10, 20%);
-		grid-template-areas:
-			"header"
-			"box1"
-			"box2"
-			"box3"
-			"cont"
-			"sidebar"
-			"footer"
-			"footer"
-			"footer"
-			"footer";
-	}
+.title {
+  border: 1px solid black;
+  grid-area: title;
 }
 
-header {
-    border: 1px solid black;
-    grid-area: header;
+.text {
+  border: 1px solid black;
+  grid-area: text;
+}
+
+.links1 {
+  border: 1px solid black;
+  grid-area: links1;
+}
+
+.links2 {
+  border: 1px solid black;
+  grid-area: links2;
+}
+
+.links3 {
+  border: 1px solid black;
+  grid-area: links3;
+}
+
+/* Second section */
+.container-mid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 20% 20% 40% 20%;
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". . . . title2 title2 title2 title2 . . . ."
+  ". . box1 box1 . box2 box2 . box3 box3 . ."
+  ". . . . . . . . . . . .";
+}
+
+.title2 {
+  border: 1px solid black;
+  grid-area: title2;
 }
 
 .box1 {
-    border: 1px solid black;
-    grid-area: box1;
+  border: 1px solid black;
+  grid-area: box1;
 }
 
 .box2 {
-    border: 1px solid black;
-    grid-area: box2;
+  border: 1px solid black;
+  grid-area: box2;
 }
 
 .box3 {
-    border: 1px solid black;
-    grid-area: box3;
+  border: 1px solid black;
+  grid-area: box3;
 }
 
-.content {
-    border: 1px solid black;
-    grid-area: cont;
+/* Third section */
+.container-last {
+  display: grid;
+	width: 100%;
+	height: 100%;
+
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 10% 15% 30% 30% 15%;
+  grid-template-areas:
+  ". . . . . . . . . . . ."
+  ". . . . title3 title3 title3 title3 . . . ."
+  ". . team1 team1 team1 team1 team2 team2 team2 team2 . ."
+  ". . team3 team3 team3 team3 team4 team4 team4 team4 . ."
+  ". . . . . . . . . . . .";
 }
 
-.sidebar {
-    border: 1px solid black;
-    grid-area: sidebar;
+.title3 {
+  border: 1px solid black;
+  grid-area: title3;
 }
 
+.team1 {
+  border: 1px solid black;
+  grid-area: team1;
+}
+
+.team2 {
+  border: 1px solid black;
+  grid-area: team2;
+}
+
+.team3 {
+  border: 1px solid black;
+  grid-area: team3;
+}
+
+.team4 {
+  border: 1px solid black;
+  grid-area: team4;
+}
+/* =============================================================================== */
+
+/* Footer */
+/* =============================================================================== */
 footer {
-    border: 1px solid black;
-	grid-area: footer;
-	
-	display: grid;
-
-	grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "footer-box1 footer-box2 footer-box3 footer-box4";
-}
-
-@media screen and (max-width: 960px) {
-	footer {
-		border: 1px solid black;
-		grid-area: footer;
-		
-		display: grid;
-	
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 50%);
-		grid-template-areas:
-			"footer-box1 footer-box2"
-			"footer-box3 footer-box4";
-	}
-}
-
-@media screen and (max-width: 768px) {
-	footer {
-		border: 1px solid black;
-		grid-area: footer;
-		
-		display: grid;
-	
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(4, 25%);
-		grid-template-areas:
-			"footer-box1"
-			"footer-box2"
-			"footer-box3"
-			"footer-box4";
-	}
-}
-
-.footer-box1 {
-	margin: 5px;
-    border: 1px solid black;
-    grid-area: footer-box1;
-}
-
-.footer-box2 {
-	margin: 5px;
-    border: 1px solid black;
-    grid-area: footer-box2;
-}
-
-.footer-box3 {
-	margin: 5px;
-    border: 1px solid black;
-    grid-area: footer-box3;
-}
-
-.footer-box4 {
-	margin: 5px;
-    border: 1px solid black;
-    grid-area: footer-box4;
+  background-color: rgb(58, 58, 58);
 }
