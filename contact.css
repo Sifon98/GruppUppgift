@@ -1,15 +1,61 @@
-body {
+html {
     background-color: blue;
     background-size: cover;
 }
 
-
-header {
-
-
+body {
+    width: 1000px;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    
 }
 
+header {
+    padding: 10px 10px;
+    margin: 20px auto;
+
+}
+nav {
+    font-size: 20px;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'p1 p2'
+    'p3 p4';
+    
+ }
+
+.p1 , .p2 , .p3 , .p4 {
+    display: grid;
+    background-color: rgba(41, 103, 238, 0.651);
+    margin: 10px 10px;
+    height: auto;
+    width: auto;
+    float: right;
+    
+}
+
+.imgnav1 {
+    padding: 10px auto;
+}
+
+
+.msgbox {
+    display: grid;
+    margin: 10px 10px;
+    justify-content: center;
+}
+
+
 footer {
-
-
+    
+    bottom: 0%;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    
 }
