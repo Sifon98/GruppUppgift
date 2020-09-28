@@ -1,0 +1,310 @@
+p,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVIGATION */
+/* =============================================================================== */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    transition: background 0.3s;
+    background-color: rgba(58, 58, 58, 0);
+    color: white;
+  }
+  
+  #navbar .home {
+    margin-left: 200px;
+    color: white;
+  }
+
+  #navbar .home img {
+      height: auto;
+      width: 250px;
+  }
+
+  @media(max-width: 1024px){
+    #navbar .home {
+        margin-left: 100px;
+    }
+  }
+  
+  .navbar-links ul {
+    margin: 0;
+    margin-right: 200px;
+    padding: 0;
+    display: flex;
+  }
+
+  @media(max-width: 1024px){
+    .navbar-links ul {
+        margin-right: 100px;
+    }
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 30px 2rem 30px 2rem;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: rgba(87, 87, 87, 0.788);
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: flex;
+      top: 1.7rem;
+    }
+  
+    #navbar .home {
+      margin-left: 1rem;
+    }
+  
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgb(58, 58, 58);
+      text-align: center;
+    }
+  
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .navbar-links ul {
+      margin-right: 0px;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .navbar-links li  {
+      margin: 1rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  
+    .navbar-links li a {
+      margin: 1rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+
+  .cus-nav {
+      background-color: rgb(58, 58, 58) !important;
+  }
+/* =============================================================================== */
+
+  /* Header image, content */
+  /* =============================================================================== */
+  .masthead {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/bg-blue1.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    margin-top: -78px;
+    -webkit-animation: fade-in ease 0.7s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: fade-in ease 0.7s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+  }
+
+  .masthead h1 {
+    font-size: 72px;
+    padding-left: 50px;
+  }
+
+  .masthead p {
+    font-size: 34px;
+    padding-left: 50px;
+  }
+
+  .bg-color {
+    margin-top: 50px !important;
+    background-color: rgba(20, 20, 20, 0.486);
+    height: 300px;
+    width: 33% !important;
+  }
+  /* =============================================================================== */
+
+/* Page content */
+/* =============================================================================== */
+section {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgb(250, 250, 250);
+}
+
+.section-dark {
+  background-color: rgb(235, 235, 235);
+}
+
+/* First section */
+.container-first {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 15% 15% 45% 10% 15%;
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". . . . title title title title . . . ."
+  ". . . text text text text text text . . ."
+  ". . . links1 . links2 links2 . links3 . . ."
+  ". . . . . . . . . . . .";
+}
+
+.title {
+  border: 1px solid black;
+  grid-area: title;
+}
+
+.text {
+  border: 1px solid black;
+  grid-area: text;
+}
+
+.links1 {
+  border: 1px solid black;
+  grid-area: links1;
+}
+
+.links2 {
+  border: 1px solid black;
+  grid-area: links2;
+}
+
+.links3 {
+  border: 1px solid black;
+  grid-area: links3;
+}
+
+/* Second section */
+.container-mid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 20% 20% 40% 20%;
+  grid-template-areas: 
+  ". . . . . . . . . . . ."
+  ". . . . title2 title2 title2 title2 . . . ."
+  ". . box1 box1 . box2 box2 . box3 box3 . ."
+  ". . . . . . . . . . . .";
+}
+
+.title2 {
+  border: 1px solid black;
+  grid-area: title2;
+}
+
+.box1 {
+  border: 1px solid black;
+  grid-area: box1;
+}
+
+.box2 {
+  border: 1px solid black;
+  grid-area: box2;
+}
+
+.box3 {
+  border: 1px solid black;
+  grid-area: box3;
+}
+
+/* Third section */
+.container-last {
+  display: grid;
+	width: 100%;
+	height: 100%;
+
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 10% 15% 30% 30% 15%;
+  grid-template-areas:
+  ". . . . . . . . . . . ."
+  ". . . . title3 title3 title3 title3 . . . ."
+  ". . team1 team1 team1 team1 team2 team2 team2 team2 . ."
+  ". . team3 team3 team3 team3 team4 team4 team4 team4 . ."
+  ". . . . . . . . . . . .";
+}
+
+.title3 {
+  border: 1px solid black;
+  grid-area: title3;
+}
+
+.team1 {
+  border: 1px solid black;
+  grid-area: team1;
+}
+
+.team2 {
+  border: 1px solid black;
+  grid-area: team2;
+}
+
+.team3 {
+  border: 1px solid black;
+  grid-area: team3;
+}
+
+.team4 {
+  border: 1px solid black;
+  grid-area: team4;
+}
+/* =============================================================================== */
+
+/* Footer */
+/* =============================================================================== */
+footer {
+  background-color: rgb(58, 58, 58);
+}
