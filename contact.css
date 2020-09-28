@@ -25,7 +25,7 @@ nav {
     grid-template-areas:
     'p1 p2'
     'p3 p4';
-    text-align: center;
+    
  }
 
 .p1 , .p2 , .p3 , .p4 {
