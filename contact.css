@@ -29,6 +29,7 @@ nav {
  }
 
 .p1 , .p2 , .p3 , .p4 {
+    background-color: rgba(41, 103, 238, 0.651);
     margin: 10px 10px;
     height: auto;
     width: auto;
