@@ -12,13 +12,14 @@ h2{
 }
 
 .space{
-    margin:150px;
-    margin-left: 530px;
+  margin:150px;
+    margin-left: 570px;
 }
 .bild-i-bild{
-    height: 300px;
-    width: 600px;
+    height: 400px;
+    width: 800px;
     border-radius: 10px;
+    
 }
 
 .boxwrapper {
@@ -41,8 +42,8 @@ h2{
 
 .box , .bilder{
     margin: 10px;
-    height: 300px;
-    width: 600px;   
+    height: 350px;
+    width: 700px;   
     border-radius:1px;
     
 }
@@ -50,6 +51,7 @@ h2{
 .box{
 margin-right: 20px;
 margin-left:80px;
+margin-top:20px;
 }   
     
 
@@ -80,6 +82,17 @@ margin-left:80px;
    margin-top: 55px;
    margin-right: 60px;
 }
+.space{
+    padding-right:100%;
+    margin-left:;
+    
+
+}
+h2{
+    font-size: 90px;
+    text-align: inherit;
+    margin-left:500px;
+}
 
 
 @media only screen and (max-width: 1024px){
@@ -97,7 +110,7 @@ margin-left:80px;
     
        
         .bilder{
-  margin-left:0px;
+  margin-left:-140px;
  }
  .bild {
      width: 70px;
@@ -106,6 +119,18 @@ margin-left:80px;
      h3{
         font-size: 27px;;
      }
+
+     .space{
+         margin-left:30px;
+         
+
+     }
+     h2{
+         font-size: 40px;
+         text-align: center;
+         margin-left:400px;
+     }
+     
      
 
 
@@ -125,9 +150,8 @@ margin-left:80px;
          grid-template-columns: 1fr; 
          
         }
-         .this{
-             float:left;
-         }
+        
+         
          .bilderwrapper{
             display: grid;
             grid-template-columns: 1fr;
@@ -137,19 +161,24 @@ margin-left:80px;
          .boxwrapper, .bilderwrapper, .this{
             margin-left:70px;
          }
+
+         
          
          .box{
              width: 200px;
              height: 200px;
-             margin:inherit;
+             padding-left:60px;
+             padding-bottom:-20;
          }
-         
+         .space{
+            margin-left:-120px;
          
 
 }
 
  @media only screen and (max-width: 768px){
       .boxwrapper {
+    
        display: grid;  
        grid-template-columns: 1fr;
        margin-right:90‰;
@@ -192,4 +221,27 @@ margin-left:80px;
     }
 
     }
+    @media only screen and (max-width: 375px){
+        .boxwrapper, .bilderwrapper{
+            padding-left:0px;
+            margin-left:0px;
+
+        }
+        h2{
+            margin-left:200px;
+        }
+
+        .bild-i-bild{
+            height: 150px;
+            width: 300px;
+
+        }
+        .bilderwrapper{
+            margin-left: 50px;
+            padding-top:10px;
+        }
+        .bild{
+            margin-right: 500px;
+        }
+         
     
