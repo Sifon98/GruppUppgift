@@ -11,6 +11,8 @@ html {
     padding-top: 100px;
     
 }
+/* v NAVIGATION v */
+/*=====================================*/
 
 #navbar {
     display: flex;
@@ -67,7 +69,7 @@ html {
   }
   
   .navbar-links li a:hover {
-    background-color: rgba(87, 87, 87, 0.788);
+    background-color: rgba(87, 87, 87, 0.438);
   }
   
   .toggle-button {
@@ -138,7 +140,11 @@ html {
   .cus-nav {
       background-color: rgb(58, 58, 58) !important;
   }
+  /* ^ NAVIGATION ^ */
+/*=====================================*/
 
+/*===============================*/
+/*  v AVATARS INFO v  */
 .container {
     display: grid;
     grid-template-areas:
@@ -160,6 +166,9 @@ html {
 .imgnav1 {
     padding: 10px auto;
 }
+
+/*   ^ AVATARS INFO ^    */    
+/*==============================*/
 
 
 .msgbox {
