@@ -250,7 +250,7 @@ section {
   height: 100%;
 
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 15% 15% 45% 10% 15%;
+  grid-template-rows: 15% 15% 35% 20% 15%;
   grid-template-areas: 
   ". . . . . . . . . . . ."
   ". . . title title title title title title . . ."
@@ -382,12 +382,30 @@ section {
     grid-template-rows: 15% 15% 45% 7% 7% 7% 4%;
     grid-template-areas: 
     ". . . . . . . . . . . ."
-    ". . title title title title title title title title . ."
-    ". . text text text text text text text text . ."
-    ". . . links1 links1 links1 links1 links1 links1 . . ."
-    ". . . links2 links2 links2 links2 links2 links2 . . ."
-    ". . . links3 links3 links3 links3 links3 links3 . . ."
+    ". title title title title title title title title title title ."
+    ". text text text text text text text text text text ."
+    ". . links1 links1 links1 links1 links1 links1 links1 links1 . ."
+    ". . links2 links2 links2 links2 links2 links2 links2 links2 . ."
+    ". . links3 links3 links3 links3 links3 links3 links3 links3 . ."
     ". . . . . . . . . . . .";
+  }
+}
+
+@media (max-width: 428px) {
+  .section-first {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .section-first {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 350px) {
+  .section-first {
+    height: 170vh;
   }
 }
 
@@ -568,6 +586,10 @@ section {
     ". team3 team3 team3 team3 team3 team4 team4 team4 team4 team4 ."
     ". . . . . . . . . . . .";
   }
+
+  .section-last {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -593,7 +615,7 @@ section {
   }
 
   .section-last {
-    height: 150vh;
+    height: 160vh;
   }
 }
 
