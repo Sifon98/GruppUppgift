@@ -41,19 +41,19 @@
     <!--     ========================    -->
     <!--      v  Avatar 1-4 info v    -->
     <div class="p1"> 
-        
+        <i class="fab fa-skype"></i>
         <p><img src="../img/avatar.jpg" alt="av1" style="float:left">
             
-         Person 1 <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, voluptatum fugit. Pariatur deleniti eius similique accusantium nam ipsam nihil sapiente, neque officia, sunt rerum, ipsa perferendis veniam dolorum inventore in?
+            Behrad Hashemzadebalov <br> <br> Behrad is our Frontend Developer who coded our "Start" page. The images below are links to his personal Skype, Mail and Facebook.
         </p>
         
         <nav class="imgnav1">
-        <a href="#">
-            <img src="../img/p logo.png" alt="phone1">
+        <a href="https://www.skype.com/sv/">
+            <img src="../img/skypelogo.png" alt="phone1">
         </a>
 
-        <a href="#">
-            <img src="../img/m logo1.png" alt="mail1">
+        <a href="mailto:Behrad.Mail@hotmail.com">
+        <img src="../img/m logo1.png" alt="mail1">
         </a>
 
         <a href="https://www.facebook.com">
@@ -66,15 +66,15 @@
 
         
         <p><img src="../img/avatar.jpg" alt="av2" style="float:left">
-         Person 2 <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, voluptatum fugit. Pariatur deleniti eius similique accusantium nam ipsam nihil sapiente, neque officia, sunt rerum, ipsa perferendis veniam dolorum inventore in?
+            Basiru Njie  <br> <br> Basiru is our Frontend Developer who coded our "Portfolio" page. The images below are links to his personal Skype, Mail and Facebook.
         </p>
 
         <nav class="imgnav2">
 
-        <a href="#">
-            <img src="../img/p logo.png" alt="phone2">
+        <a href="https://www.skype.com/sv/">
+            <img src="../img/skypelogo.png" alt="phone2">
         </a>
-        <a href="#">
+        <a href="mailto:Basiru.Mail@hotmail.com">
             <img src="../img/m logo1.png" alt="mail2">
         </a>
 
@@ -89,16 +89,16 @@
         
         <p><img src="../img/avatar.jpg" alt="av3" style="float:left">
     
-            Person 3 <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, voluptatum fugit. Pariatur deleniti eius similique accusantium nam ipsam nihil sapiente, neque officia, sunt rerum, ipsa perferendis veniam dolorum inventore in?
+            Joel Morales <br> <br> Joel is our Frontend Developer who coded our "Contact" page. The images below are links to his personal Skype, Mail and Facebook.
         </p>
 
         <nav class="imgnav3">
 
-        <a href="#">
-            <img src="../img/p logo.png" alt="phone3">
+        <a href="https://www.skype.com/sv/">
+            <img src="../img/skypelogo.png" alt="phone3">
         </a>
 
-        <a href="#">
+        <a href="mailto:Joel.Mail@hotmail.com">
             <img src="../img/m logo1.png" alt="mail3">
         </a>
 
@@ -111,15 +111,15 @@
     <div class="p4"> 
 
         <p><img src="../img/avatar.jpg" alt="av4" style="float:left">
-            Person 4 <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, voluptatum fugit. Pariatur deleniti eius similique accusantium nam ipsam nihil sapiente, neque officia, sunt rerum, ipsa perferendis veniam dolorum inventore in?
+            Alexander Gustafsson <br> <br> Alexander is our Frontend Developer who coded our "About" page. The images below are links to his personal Skype, Mail and Facebook.
         </p>
 
         <nav class="imgnav4">
-        <a href="#">
-            <img src="../img/p logo.png" alt="phone4">
+        <a href="https://www.skype.com/sv/">
+            <img src="../img/skypelogo.png" alt="phone4">
         </a>
 
-        <a href="#">
+        <a href="mailto:Alexander.Mail@hotmail.com">
             <img src="../img/m logo1.png" alt="mail4">
         </a>
 
@@ -131,20 +131,34 @@
 <!--      ^  Avatar 1-4 info ^    -->
 <!--     ========================    -->
 </div>
+<!-- ====================== -->
+<!--            v MSG BOX v          -->
+
+<h3>Contact us!</h3>
 
 <div class="msgbox">
-    <h1>Skicka meddelande till oss!</h1>
-    
-    <form id="form" name="form" method="post" action="">
-    Namn: <input type="text" name="Name" id="Name"/> 
-    Mail: <input type="text" name="Mail" id="Mail"/> 
-    telefon nummer: <input type="text" name="Number" id="Number"/> <br> <br>
-    <textarea name="Msg" id="Msg" cols="50" rows="10"></textarea> <br>
-    <input type="submit" name="Knapp" id="Knapp" value="Skicka meddelandet"/>
+  <form action="/action_page.php">
+    <label for="Namn">Name</label>
+    <input type="text" id="fnamn" name="firstname" placeholder="First and last name..">
+
+    <label for="Mailadress">Mailadres</label>
+    <input type="text" id="Mail" name="Mail" placeholder="Your e-mail..">
+    <label for="Tnummer">Number</label>
+    <input type="text" id="Nummer" name="Nummer" placeholder="Phone number..">
 
 
-</form>
-</div>
+ 
+
+    <label for="Msg">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
+
+    <input type="skicka" value="Send">
+  </form>
+
+<!--        ^ MSG BOX ^              -->
+<!-- ============================ -->
+
+
 </div>
 <footer>
     <p>© SverigeWebb AB - <a href="#">info@sverigewebb.se</a></p>

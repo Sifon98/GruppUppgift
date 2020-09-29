@@ -1,3 +1,6 @@
+p,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
 html {
     background-image: url("../img/bg-blue1.jpg");
     background-size: cover;
@@ -12,7 +15,7 @@ html {
     padding-top: 100px;
     
 }
-/* v NAVIGATION v */
+/* v NAVIGATION / HEADER v */
 /*=====================================*/
 
 #navbar {
@@ -141,7 +144,7 @@ html {
   .cus-nav {
       background-color: rgb(58, 58, 58) !important;
   }
-  /* ^ NAVIGATION ^ */
+  /* ^ NAVIGATION / HEADER ^ */
 /*=====================================*/
 
 /*===============================*/
@@ -156,7 +159,6 @@ html {
 
 .p1 , .p2 , .p3 , .p4 {
     display: grid;
-   /* background-color: rgba(41, 103, 238, 0.651); */
     margin: 10px 10px;
     height: auto;
     width: auto;
@@ -164,38 +166,130 @@ html {
     
 }
 
-.imgnav1 {
+.imgnav1 , .imgnav2 , .imgnav3 , .imgnav4 {
     padding: 10px auto;
+    display: flex;
 }
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+    'p1 p2'
+    'p3 p4';
+  }
+  .body {
+    width: 800px;
+    height: auto;
+    background-color: rgba(245, 245, 245, 0.842);
+    margin: auto;
+    padding-top: 100px;
+    
+  }
+  }
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+    'p1' 
+    'p2'
+    'p3' 
+    'p4';
+  }
+  .body {
+    width: 500px;
+    height: auto;
+    background-color: rgba(245, 245, 245, 0.842);
+    margin: auto;
+    padding-top: 100px;
+    
+  }
+  }
+
+@media screen and (max-width: 768px) {
+.container {
+  display: grid;
+  grid-template-areas:
+  'p1' 
+  'p2'
+  'p3' 
+  'p4';
+}
+.body {
+  width: 500px;
+  height: auto;
+  background-color: rgba(245, 245, 245, 0.842);
+  margin: auto;
+  padding-top: 100px;
+  
+}
+}
+
+
 
 /*   ^ AVATARS INFO ^    */    
 /*==============================*/
 
-
-.msgbox {
-    display: grid;
-    margin: 10px 10px;
-    justify-content: center;
+/* ========================= */
+/*        v MSG BOX v      */
+h3 {
+  text-align: center;
+  color: rgb(51, 51, 240);
 }
 
+  input[type=text], select, textarea {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=skicka] {
+    background-color: rgb(69, 162, 238);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=skicka]:hover {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .msgbox {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+  }
 
+/*          ^ MSG BOX ^        */
+/* ================================ */
 
 footer {
-    background-color: rgb(58, 58, 58);
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    color: white;
-  }
-  
-  footer p {
-    padding-top: 45px;
-  }
-  
-  footer p a {
-    color: rgb(0, 110, 255);
-  }
-  
-  footer p a:focus {
-    color: rgb(0, 140, 255);
-  }
+  background-color: rgb(58, 58, 58);
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  padding-top: 45px;
+  margin: 0px;
+}
+
+footer p a {
+  color: rgb(0, 110, 255);
+}
+
+footer p a:focus {
+  color: rgb(0, 140, 255);
+}
