@@ -7,7 +7,7 @@ html {
 .body {
     width: 1000px;
     height: auto;
-    background-color: rgba(245, 245, 245, 0.726);
+    background-color: rgba(245, 245, 245, 0.952);
     margin: auto;
     padding-top: 100px;
     
@@ -156,7 +156,7 @@ html {
 
 .p1 , .p2 , .p3 , .p4 {
     display: grid;
-    background-color: rgba(41, 103, 238, 0.651);
+   /* background-color: rgba(41, 103, 238, 0.651); */
     margin: 10px 10px;
     height: auto;
     width: auto;
