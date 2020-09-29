@@ -184,6 +184,47 @@ hr {
     height: 300px;
     width: 33% !important;
   }
+
+  @media (max-width: 1320px){
+    .bg-color {
+      width: 40% !important;
+    }
+
+    .masthead h1 {
+      font-size: 64px;
+      padding-left: 50px;
+      padding-top: 20px;
+    }
+  
+    .masthead p {
+      font-size: 28px;
+      padding-left: 50px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .bg-color {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bg-color {
+      width: 100% !important;
+      text-align: center;
+    }
+
+    .masthead h1 {
+      font-size: 64px;
+      padding-left: 0px;
+      padding-top: 20px;
+    }
+  
+    .masthead p {
+      font-size: 28px;
+      padding-left: 0px;
+    }
+  }
   /* =============================================================================== */
 
 /* Page content */
@@ -198,6 +239,10 @@ section {
   background-color: rgb(235, 235, 235);
 }
 
+.section-last {
+  background-color: rgb(250, 250, 250);
+}
+
 /* First section */
 .container-first {
   display: grid;
@@ -208,10 +253,74 @@ section {
   grid-template-rows: 15% 15% 45% 10% 15%;
   grid-template-areas: 
   ". . . . . . . . . . . ."
-  ". . . . title title title title . . . ."
+  ". . . title title title title title title . . ."
   ". . . text text text text text text . . ."
   ". . . links1 links1 links2 links2 links3 links3 . . ."
   ". . . . . . . . . . . .";
+}
+
+@media (max-width: 1300px) {
+  .container-first {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 15% 45% 10% 15%;
+    grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . . title title title title title title . . ."
+    ". . . text text text text text text . . ."
+    ". . links1 links1 links2 links2 links2 links2 links3 links3 . ."
+    ". . . . . . . . . . . .";
+  }
+
+  .links1 {
+    grid-area: links1;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .links2 {
+    grid-area: links2;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .links3 {
+    grid-area: links3;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-first {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 15% 45% 10% 15%;
+    grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . title title title title title title title title . ."
+    ". . text text text text text text text text . ."
+    ". links1 links1 links1 links2 links2 links2 links2 links3 links3 links3 ."
+    ". . . . . . . . . . . .";
+  }
+
+  .text {
+    grid-area: text;
+    overflow: hidden;
+  }
+
+  .text p {
+    font-size: 18px !important;
+  }
 }
 
 .title {
@@ -226,6 +335,7 @@ section {
 
 .text p {
   font-size: 20px;
+  margin-top: 0px;
 }
 
 .links1 {
@@ -252,6 +362,35 @@ section {
   margin: auto;
 }
 
+@media (max-width: 1174px) {
+  .main-head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 612px) {
+  .main-head {
+    font-size: 30px;
+  }
+
+  .container-first {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 15% 45% 7% 7% 7% 4%;
+    grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . title title title title title title title title . ."
+    ". . text text text text text text text text . ."
+    ". . . links1 links1 links1 links1 links1 links1 . . ."
+    ". . . links2 links2 links2 links2 links2 links2 . . ."
+    ". . . links3 links3 links3 links3 links3 links3 . . ."
+    ". . . . . . . . . . . .";
+  }
+}
+
 /* Second section */
 .container-mid {
   display: grid;
@@ -267,6 +406,72 @@ section {
   ". . . . . . . . . . . .";
 }
 
+@media (max-width: 1300px) {
+  .container-mid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 15% 20% 40% 25%;
+    grid-template-areas: 
+    ". . . . . . . . . ."
+    ". . . title2 title2 title2 title2 . . ."
+    ". box1 box1 . box2 box2 . box3 box3 ."
+    ". . . . . . . . . .";
+  }
+}
+
+@media (max-width: 768px) {
+  .container-mid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    justify-content: space-between;
+    gap: 10px;
+  
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 15% 20% 40% 25%;
+    grid-template-areas: 
+    ". . . . . . . . . . ."
+    ". . . title2 title2 title2 title2 title2 . . ."
+    ". box1 box1 box1 box2 box2 box2 box3 box3 box3 ."
+    ". . . . . . . . . . .";
+  }
+}
+
+@media (max-width: 700px) {
+  .container-mid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    justify-content: space-between;
+    gap: 10px;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4% 15% 22% 22% 22% 15%;
+    grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . . title2 title2 title2 title2 title2 title2 . . ."
+    ". . box1 box1 box1 box1 box1 box1 box1 box1 . ."
+    ". . box2 box2 box2 box2 box2 box2 box2 box2 . ."
+    ". . box3 box3 box3 box3 box3 box3 box3 box3 . ."
+    ". . . . . . . . . . . .";
+  }
+
+  .section-dark {
+    height: 200vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-dark {
+    height: 260vh;
+  }
+}
+
 .title2 {
   grid-area: title2;
   align-self: center;
@@ -276,6 +481,18 @@ section {
   text-align: center;
   font-size: 72px;
   margin: auto;
+}
+
+@media (max-width: 1174px) {
+  .sec-head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 612px) {
+  .sec-head {
+    font-size: 30px;
+  }
 }
 
 .box1 {
@@ -336,6 +553,161 @@ section {
   ". . . . . . . . . . . .";
 }
 
+@media (max-width: 1520px) {
+  .container-last {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 15% 30% 30% 15%;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . title3 title3 title3 title3 . . . ."
+    ". team1 team1 team1 team1 team1 team2 team2 team2 team2 team2 ."
+    ". team3 team3 team3 team3 team3 team4 team4 team4 team4 team4 ."
+    ". . . . . . . . . . . .";
+  }
+}
+
+@media (max-width: 1024px) {
+   .h2-team {
+     font-size: 220px !important;
+   }
+
+   .container-last {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 10% 20% 20% 20% 20% 5%;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . title3 title3 title3 title3 . . . ."
+    ". . team1 team1 team1 team1 team1 team1 team1 team1 . ."
+    ". . team2 team2 team2 team2 team2 team2 team2 team2 . ."
+    ". . team3 team3 team3 team3 team3 team3 team3 team3 . ."
+    ". . team4 team4 team4 team4 team4 team4 team4 team4 . ."
+    ". . . . . . . . . . . .";
+  }
+
+  .section-last {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-last {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 8% 10% 20% 20% 20% 20% 7%;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . title3 title3 title3 title3 . . . ."
+    ". . team1 team1 team1 team1 team1 team1 team1 team1 . ."
+    ". . team2 team2 team2 team2 team2 team2 team2 team2 . ."
+    ". . team3 team3 team3 team3 team3 team3 team3 team3 . ."
+    ". . team4 team4 team4 team4 team4 team4 team4 team4 . ."
+    ". . . . . . . . . . . .";
+  }
+
+  .section-last {
+    height: 140vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-last {
+    display: grid;
+    width: 100%;
+    height: 100%;
+  
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 8% 10% 20% 20% 20% 20% 7%;
+    grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . title3 title3 title3 title3 . . . ."
+    ". . team1 team1 team1 team1 team1 team1 team1 team1 . ."
+    ". . team2 team2 team2 team2 team2 team2 team2 team2 . ."
+    ". . team3 team3 team3 team3 team3 team3 team3 team3 . ."
+    ". . team4 team4 team4 team4 team4 team4 team4 team4 . ."
+    ". . . . . . . . . . . .";
+
+    text-align: center;
+    align-content: center;
+  }
+
+  .team1 img {
+    width: auto;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team2 img {
+    width: auto;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team3 img {
+    width: auto;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team4 img {
+    width: auto;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }  
+  
+  .section-last {
+    height: 300vh;
+  }
+}
+
+@media (max-width: 400px){
+  .section-last {
+    height: 400vh;
+  }
+
+  .team1 img {
+    width: 90% !important;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team2 img {
+    width: 90% !important;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team3 img {
+    width: 90% !important;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  }
+
+  .team4 img {
+    width: 90% !important;
+    margin: 0px !important;
+    float: none !important;
+    border-radius: 150px;
+  } 
+}
+
 .title3 {
   grid-area: title3;
   align-self: center;
@@ -345,6 +717,18 @@ section {
   text-align: center;
   font-size: 72px;
   margin: auto;
+}
+
+@media (max-width: 1174px) {
+  .last-head {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 612px) {
+  .last-head {
+    font-size: 30px;
+  }
 }
 
 .sub-title {
@@ -429,6 +813,7 @@ footer {
 
 footer p {
   padding-top: 45px;
+  margin: 0px;
 }
 
 footer p a {
