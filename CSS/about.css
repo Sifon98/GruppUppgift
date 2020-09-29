@@ -2,6 +2,19 @@ p,h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+hr {
+  border: 2px solid #0064FF;
+  border-radius: 10px;
+}
+
+.short {
+  width: 20%;
+}
+
+.blue {
+  color: #0064FF;
+}
+
 /* NAVIGATION */
 /* =============================================================================== */
 #navbar {
@@ -177,7 +190,7 @@ p,h1,h2,h3,h4,h5,h6 {
 /* =============================================================================== */
 section {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(250, 250, 250);
 }
 
@@ -197,33 +210,46 @@ section {
   ". . . . . . . . . . . ."
   ". . . . title title title title . . . ."
   ". . . text text text text text text . . ."
-  ". . . links1 . links2 links2 . links3 . . ."
+  ". . . links1 links1 links2 links2 links3 links3 . . ."
   ". . . . . . . . . . . .";
 }
 
 .title {
-  border: 1px solid black;
   grid-area: title;
+  align-self: center;
 }
 
 .text {
-  border: 1px solid black;
   grid-area: text;
+  overflow: hidden;
+}
+
+.text p {
+  font-size: 20px;
 }
 
 .links1 {
-  border: 1px solid black;
   grid-area: links1;
+  align-self: center;
+  text-align: center;
 }
 
 .links2 {
-  border: 1px solid black;
   grid-area: links2;
+  align-self: center;
+  text-align: center;
 }
 
 .links3 {
-  border: 1px solid black;
   grid-area: links3;
+  align-self: center;
+  text-align: center;
+}
+
+.main-head {
+  text-align: center;
+  font-size: 72px;
+  margin: auto;
 }
 
 /* Second section */
@@ -233,7 +259,7 @@ section {
   height: 100%;
 
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 20% 20% 40% 20%;
+  grid-template-rows: 15% 20% 40% 25%;
   grid-template-areas: 
   ". . . . . . . . . . . ."
   ". . . . title2 title2 title2 title2 . . . ."
@@ -242,30 +268,63 @@ section {
 }
 
 .title2 {
-  border: 1px solid black;
   grid-area: title2;
+  align-self: center;
+}
+
+.sec-head {
+  text-align: center;
+  font-size: 72px;
+  margin: auto;
 }
 
 .box1 {
-  border: 1px solid black;
+  border: 4px solid #0064FF;
+  border-radius: 20px;
   grid-area: box1;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+  background-color: rgb(250, 250, 250);
+}
+
+.box1:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 20px;
 }
 
 .box2 {
-  border: 1px solid black;
+  border: 4px solid #0064FF;
+  border-radius: 20px;
   grid-area: box2;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+  background-color: rgb(250, 250, 250);
+}
+
+.box2:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 20px;
 }
 
 .box3 {
-  border: 1px solid black;
+  border: 4px solid #0064FF;
+  border-radius: 20px;
   grid-area: box3;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+  background-color: rgb(250, 250, 250);
+}
+
+.box3:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 20px;
 }
 
 /* Third section */
 .container-last {
   display: grid;
 	width: 100%;
-	height: 100%;
+  height: 100%;
 
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 10% 15% 30% 30% 15%;
@@ -278,28 +337,84 @@ section {
 }
 
 .title3 {
-  border: 1px solid black;
   grid-area: title3;
+  align-self: center;
+}
+
+.last-head {
+  text-align: center;
+  font-size: 72px;
+  margin: auto;
+}
+
+.sub-title {
+  font-size: 20px;
+  margin: 0px;
+  color: grey;
 }
 
 .team1 {
-  border: 1px solid black;
   grid-area: team1;
 }
 
+.team1 img {
+  height: 85%;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team1 p {
+  padding-right: 15px;
+}
+
 .team2 {
-  border: 1px solid black;
   grid-area: team2;
 }
 
+.team2 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team2 p {
+  padding-right: 15px;
+}
+
 .team3 {
-  border: 1px solid black;
   grid-area: team3;
 }
 
+.team3 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team3 p {
+  padding-right: 15px;
+}
+
 .team4 {
-  border: 1px solid black;
   grid-area: team4;
+}
+
+.team4 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team4 p {
+  padding-right: 15px;
 }
 /* =============================================================================== */
 
@@ -307,4 +422,20 @@ section {
 /* =============================================================================== */
 footer {
   background-color: rgb(58, 58, 58);
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  padding-top: 45px;
+}
+
+footer p a {
+  color: rgb(0, 110, 255);
+}
+
+footer p a:focus {
+  color: rgb(0, 140, 255);
 }
