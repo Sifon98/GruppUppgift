@@ -324,7 +324,7 @@ section {
 .container-last {
   display: grid;
 	width: 100%;
-	height: 100%;
+  height: 100%;
 
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 10% 15% 30% 30% 15%;
@@ -347,24 +347,74 @@ section {
   margin: auto;
 }
 
+.sub-title {
+  font-size: 20px;
+  margin: 0px;
+  color: grey;
+}
+
 .team1 {
-  border: 1px solid black;
   grid-area: team1;
 }
 
+.team1 img {
+  height: 85%;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team1 p {
+  padding-right: 15px;
+}
+
 .team2 {
-  border: 1px solid black;
   grid-area: team2;
 }
 
+.team2 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team2 p {
+  padding-right: 15px;
+}
+
 .team3 {
-  border: 1px solid black;
   grid-area: team3;
 }
 
+.team3 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team3 p {
+  padding-right: 15px;
+}
+
 .team4 {
-  border: 1px solid black;
   grid-area: team4;
+}
+
+.team4 img {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  float: left;
+  border-radius: 150px;
+}
+
+.team4 p {
+  padding-right: 15px;
 }
 /* =============================================================================== */
 
