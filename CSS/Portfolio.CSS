@@ -1,6 +1,12 @@
 body{
-    background-color:whitesmoke;
+    background-color:white;
+
+
 }
+.header,.footer{
+    background-color:rgb(11, 126, 165);
+}
+
 
 h3{
     margin: 20px;
@@ -159,7 +165,9 @@ h2{
          margin-left:400px;
      }
      
-     
+.logo{
+    display: none;
+}     
 
 
  
