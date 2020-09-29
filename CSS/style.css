@@ -10,7 +10,7 @@ body
     font-size: 1rem;
     line-height: 1.5;
     background: #fff;
-    color: #222;
+    color: #2f2f2f;
 
 }
 .btn
@@ -40,8 +40,6 @@ ul
     font-size: 18px;
     padding: 20px 0;
     justify-content: space-between;
-   
-
 }
 
 .main-nav .logo
@@ -82,6 +80,7 @@ ul
 {
     flex: 1;
     margin-left: 20px;
+    margin-top: 10px;
 }
 .main-nav ul.right-menu
 {
@@ -96,7 +95,7 @@ ul
     right: 30px;
     z-index: 2;
     display: none;
-    color: #f2f2f2;
+    color: #2f2f2f;
 }
 .btn
 {
@@ -105,7 +104,7 @@ ul
     border: 0;
     font-weight: bold;
     padding: 10px 20px;
-    background: #262626;
+    background: #00aced;;
     color: #fff;
     font-size: 15px;
 }
@@ -114,20 +113,21 @@ ul
     opacity: 0.8;
 }
 /*nav ul li */
+/* -------------------------------------------------------------- */
 /* navbar background */
 .navbar
 {
     width: 100%;
     height: auto;
-    background: url('../img/apple-macbook.jpg') 
-    no-repeat center center/cover;
+    background: url('../img/pxfuel.com-3.jpg') 
+    no-repeat 100% 100%/cover;
     text-align: center;
     border-bottom: 2px solid #bbb;
     background-attachment: fixed;
     margin-bottom: 10px;
 }
 /* navbar background */
-
+/* --------------------------------------------------------------- */
 /* Boxes */
 .bigbox
 {
@@ -165,6 +165,8 @@ ul
 .bigbox .box:hover
 {
     height: 420px;
+    background: url('../img/berra10.svg')
+    no-repeat center center/cover;
 }
 .bigbox .box .imgBx
 {
@@ -179,9 +181,8 @@ ul
 }
 .bigbox .box .imgBx img
 {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
-
 }
 .bigbox .box .text
 {
@@ -193,7 +194,6 @@ ul
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
-
 }
 .bigbox .box:hover .text
 {
@@ -204,172 +204,8 @@ ul
 }
 
 /* Boxes */
-
-/* Gallery Seciton*/
-.swiper-container
-{
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 200px;
-    font-size: 14px;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid black;
-
-}
-.select
-{
-    text-align: center;
-    position: absolute;
-    margin-top: 10px;
-}
-.swiper-slide
-{
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background: #000;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
-}
-.swiper-container img
-{
-    width: 100%;
-}
-/* Gallery Section */
-
-/* btn GetStarted h2 p in the navbar*/
-.getstarted
-{
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
-
-.getstarted h2
-{
-    font-size: 40px;
-}
-
-.navbar .btn
-{
-    margin-top: 20px;
-    border-radius: 20px;
-}
-/* btn GetStarted h2 p in the navbar*/
-/* ---------------------------------------------- */
-
-/* Join Setion */
-.seciton-join
-{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.seciton-join .content
-{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-top: 50px;
-
-}
-
-.seciton-join .content h2  
-{
-    text-align: center;
-}
-.content div
-{
-    margin: 20px;
-}
-.content img
-{
-    width: 100%;
-}
-.seciton-join p, .room p
-{
-    margin: 30px 0 20px;
-}
-/* Join Section */
-/* ----------------------- */
-
-/* Room Section */
-.room
-{
-    height: auto;
-    background: url('../img/pxfuel.com-4.jpg')
-    no-repeat center center/cover;
-    margin: 10px 20px;
-    margin-bottom: 30px;
-}
-
-.room .content 
-{
-    width: 50%;
-    padding: 50px 0 0 30px;
-}
-.intro-text
-{
-    width: 30%;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.5 all ease-in-out;
-}
-.intro-appear
-{
-    opacity: 1;
-    transform: translateY(0px);
-
-}
-.dark
-{
-    color: #333;
-}
-.dark .btn
-{
-    color: #f2f2f2;
-    margin-bottom: 20px;
-}
-/* Room Section */
-/* --------------------- */
-
-/* My Team */
-.myteam
-{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin: 10px 20px;
-    text-align: center;
-}
-.myteam img
-{
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-.myteam h3
-{
-    margin-bottom: 5px;
-}
-.myteam a
-{
-    display: inline-block;
-    padding-top: 10px;
-    color: #0067b8;
-    text-transform: uppercase;
-    font-weight: bold; 
-}
-.myteam a:hover
-{
-   padding-bottom: 2px solid #0067b8;
-}
-/* My Team */
-/* --------------------- */
+/* ------------------------------------------------------------------ */
+/* ---------------------------------------------------------------- */
 /* boxes2 */
 .bigbox2
 {
@@ -384,7 +220,7 @@ ul
 }
 .bigbox2 .box2
 {
-    position: relative;
+    position: relative; 
     max-width: 300px;
     height: 215px;
     background: #fff;
@@ -394,6 +230,7 @@ ul
     flex-direction: column;
     box-shadow: 0 5px rgb(0,0,0,0.5);
     transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 .bigbox2 .box2:hover
 {
@@ -401,7 +238,7 @@ ul
 }
 .bigbox2 .box2 .imgBx2
 {
-    position: relative;
+    position: relative; 
     width: 260px;
     height: 260px;
     top: -60px;
@@ -411,7 +248,7 @@ ul
 }
 .bigbox2 .box2 .imgBx2 img
 {
-    max-width: 100%;
+    width: 100%; 
     border-radius: 4px;
 
 }
@@ -426,16 +263,204 @@ ul
     opacity: 0;
     transition: 0.3s ease-in-out;
 
-}
+} 
 .bigbox2 .box2:hover .text2
 {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
-}
+} 
 
 /* boxes2 */
+/* ------------------------------------------------------------------ */
+
+
+/* btn GetStarted h2 p in the navbar*/
+.getstarted
+{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.getstarted h2
+{
+    font-size: 30px;
+    font-family: initial;
+}
+
+.navbar .btn
+{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+/* btn GetStarted h2 p in the navbar*/
+/* -------------------------------------------------------------------- */
+
+/* Join Setion */
+.seciton-join
+{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.seciton-join .content
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 10px; */
+}
+
+.seciton-join .content h2  
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.content div
+{
+    margin: 20px;
+}
+.content img
+{
+    width: 100%;
+}
+.seciton-join p, .room p
+{
+    margin: 30px 0 20px;
+}
+/* Join Section */
+/* ----------------------------------------------------------------- */
+
+/* Room Section */
+.room
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.room .content
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-top: 50px;
+    
+}
+
+.room .content h2  
+{
+    text-align: center;
+}
+.content div
+{
+    margin: 20px;
+}
+.content img
+{
+    width: 100%;
+}
+.room p, .room p
+{
+    margin: 10px 0 20px;
+}
+/* Room Section */
+/* ------------------------------------------------------------------- */
+/* Mall */
+.mall
+{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    background: url('../img/berra1.png')
+    no-repeat center center/cover;
+}
+.design .design-p
+{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-family: initial;
+    color: #00aced;
+}
+/* Mall */
+
+/* My Team */
+.myteam
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 30px 20px;
+    text-align: center;
+}
+.fa-code
+{
+    color: #e54d26;
+}
+.fa-css3
+{
+    color: #00aced;
+}
+.fa-align-justify
+{
+    color: #bb0000;
+}
+.fa-shopping-bag
+{
+    color: #12e4e1;
+}
+.myteam h3
+{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.myteam p
+{
+    margin-bottom: 10px;
+}
+/* My Team */
+/* --------------------------------------------------------------------*/
+.place
+{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: initial;
+    color: #00aced;
+}
+/* Gallery Seciton*/
+.swiper-container
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select
+{
+    text-align: center;
+    position: absolute;
+    margin-top: 10px;
+}
+.swiper-slide
+{
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    margin-bottom: 20px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+.swiper-container img
+{
+    width: 100%;
+}
+/* Gallery Section */
+/* -------------------------------------------------------------- */
 
 /* follow  */
 .follow
@@ -446,7 +471,11 @@ ul
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-
+}
+.media p
+{
+    font-size: 2rem;
+    font-family: initial;
 }
 .media
 {
@@ -489,12 +518,14 @@ ul
     color: #d5d5d5;
 }
 /* follow  */
-/* ------------------------- */
+/* ---------------------------------------------------------------------*/
 
 /* Profil */
 .profil
 {
     background: #262626;
+    width: 100%;
+    height: auto;
     color: #fff;
     font-size: 14px;
     padding: 35px 0;
@@ -521,7 +552,7 @@ ul
     line-height: 2.8;
 }
 /* Profil */
-/* ---------------------- */
+/* --------------------------------------------------------------------- */
 
 /* footer */
 .footer
@@ -557,24 +588,48 @@ ul
 {
     margin-right: 10px;
 }
-
 /* Footer */
-/* ---------------------- */
+/* ----------------------------------------------------------------- */
 
 @media(max-width: 960px)
 {
-    .myteam
-    {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .myteam img
+    .myteam i
     {
         width: 95%;
     } 
-    .room .content h2
+    .myteam
     {
-        margin-top: 10px;
-    } 
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .seciton-join .content
+    {
+        display: block;
+        text-align: center;
+
+    }
+    .content img
+    {
+        width: 50%;
+    }
+    /* .seciton-join img,
+    .room img
+    {
+        max-width: 700px;
+    } */
+    .room .content
+    {
+        display: block;
+        text-align: center;
+        border-top: 1px solid #2f2f2f;
+        margin-bottom: 30px;
+    }
+    .swiper-slide
+    {
+        width: 380px;
+        margin-bottom: 15px;
+    }
+    
 }
 
 @media(max-width: 768px)
@@ -637,13 +692,8 @@ ul
     }
     .swiper-slide
     {
-        background-position: center;
-        background-size: cover;
         width: 300px;
-        margin-top: 150px;
         margin-bottom: 15px;
-        background: #000;
-        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
     }
     .seciton-join .content
     {
@@ -652,16 +702,47 @@ ul
         text-align: center;
         font-size: 14px;
     }
+    .room .content
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
     .content img
     {
-        width: 90%;
+        width: 70%;
         margin-left: 20px;
     }
     .myteam
     {
         grid-template-columns: repeat(2, 1fr);
     }
+    .fa-css3,
+    .fa-code,
+    .fa-align-justify,
+    .fa-shopping-bag 
+    {
+       font-size: 3.5rem; 
+    }
+    .myteam h3
+    {
+        font-size: 1rem;
+    }
+    .myteam p
+    {
+        font-size: 14px;
+    }
+    .place
+    {
+        font-size: 1.5rem;
+    }
     .seciton-join .content p
+    {
+        display: none;
+
+    }
+    .room .content p
     {
         display: none;
 
@@ -670,23 +751,9 @@ ul
     {
         margin-bottom: 10px;
     }
-    .room
+    .room 
     {
-        height: 300px;
-    }
-    .room .content 
-    {
-        width: 55%;
-        padding: 10px 0 0 30px;
-        font-size: 12px;
-    } 
-    .room .content p 
-    {
-        display: none;
-    }
-    .room .content h2
-    {
-        margin-top: 80px;
+        margin-bottom: 10px;
     }
     .follow a
     {
@@ -717,6 +784,10 @@ ul
 }
 @media(max-width: 500px)
 {
+    .bigbox .box:hover
+    {
+        height: 500px;
+    }
     .getstarted h2
     {
         font-size: 25px;
@@ -724,39 +795,33 @@ ul
     }
     .swiper-slide
     {
-        background-position: center;
-        background-size: cover;
-        width: 200px;
-        margin-top: 100px;
+        width: 250px;
         margin-bottom: 10px;
-        background: #000;
-        -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
     }
     .myteam
     {
         grid-template-columns: 1fr;
-    }  
+        text-align: center;
+    } 
+    .fa-css3,
+    .fa-code,
+    .fa-align-justify,
+    .fa-shopping-bag 
+    {
+       font-size: 2.5rem; 
+    }
+    .myteam h3
+    {
+        font-size: 1rem;
+    }
     .profil .profil-inner
     {
         grid-template-columns: 1fr;
     }
-    .room
+    .myteam p
     {
-        height: 200px;
-    }
-    .room .content 
-    {
-        width: 55%;
-        padding: 20px 0 0 30px;
-        font-size: 11px;
-    }
-    .room .content h2
-    {
-        margin-top: 80px;
-    }
-    .room .content p 
-    {
-        display: none;
+        width: 200px;
+        margin-left: 125px;
     }
     .profil .profil-inner ul 
     {
