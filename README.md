@@ -10,7 +10,7 @@ De viktiga känslorna att förmedla för oss är trygghet, säkerhet, elegans, c
 
 ## Uppdelning av arbete
 
-Home        -Behrad Hashemzadebalov
-About       -Alexander Gustafsson
-Portfolio   -Basiru Njie
+Home        -Behrad Hashemzadebalov<br/>
+About       -Alexander Gustafsson<br/>
+Portfolio   -Basiru Njie<br/>
 Contact     -Joel Morales
