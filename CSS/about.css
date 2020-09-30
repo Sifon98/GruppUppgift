@@ -241,6 +241,7 @@ section {
 
 .section-last {
   background-color: rgb(250, 250, 250);
+  height: 120vh;
 }
 
 /* First section */
@@ -638,7 +639,7 @@ section {
   }
 
   .section-last {
-    height: 140vh;
+    height: 180vh;
   }
 }
 
