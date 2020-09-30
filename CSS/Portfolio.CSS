@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    width: 80%;
+    width: 100%;
     align-items: center;
     top: 0;
     transition: background 0.3s;
@@ -20,6 +20,7 @@ body{
     color: white;
     
   }
+
   
   #navbar .home {
     margin-left: 200px;
@@ -31,13 +32,14 @@ body{
       width: 250px;
   }
 
+
   @media(max-width: 1024px){
     #navbar .home {
         margin-left: 100px;
         
     }
     #navbar{
-      width: 100%;
+      width:1024px;
     }
   }
   
@@ -210,6 +212,7 @@ margin-top:20px;
 }
 .footer{
     margin-top:100px;
+    width: 100%;
 }
 .header{
     margin-bottom: 100px;
@@ -241,8 +244,8 @@ h2{
     margin-left:500px;
 }
 footer {
-    background-color: rgb(58, 58, 58);
-    width: 100%;
+   
+    width: 1920px;
     height: 100px;
     text-align: center;
     color: white;
@@ -356,6 +359,7 @@ footer {
             margin-left:-120px; 
 
 }
+
         .footer{
             width:100%;
         }
@@ -367,6 +371,9 @@ footer {
        display: grid;  
        grid-template-columns: 1fr;
        margin-right:90‰;
+       }
+       #navbar{
+         width: 768px;
        }
        .box {
         margin: 10px;
@@ -412,6 +419,9 @@ footer {
             padding-left:0px;
             margin-left:0px;
 
+        }
+        #navbar{
+          width: 375px;
         }
         h2{
             margin-left:200px;
