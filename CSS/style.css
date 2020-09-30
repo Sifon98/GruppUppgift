@@ -115,7 +115,7 @@ ul
 /*nav ul li */
 /* -------------------------------------------------------------- */
 /* navbar background */
-.navbar
+.navbar-head
 {
     width: 100%;
     height: auto;
@@ -125,7 +125,134 @@ ul
     border-bottom: 2px solid #bbb;
     background-attachment: fixed;
     margin-bottom: 10px;
+    margin-top: -150px;
 }
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    transition: background 0.3s;
+    background-color: rgba(58, 58, 58, 0);
+    color: white;
+  }
+  
+  #navbar .home {
+    margin-left: 200px;
+    color: white;
+  }
+
+  #navbar .home img {
+      height: auto;
+      width: 250px;
+  }
+
+  @media(max-width: 1024px){
+    #navbar .home {
+        margin-left: 100px;
+    }
+  }
+  
+  .navbar-links ul {
+    margin: 0;
+    margin-right: 200px;
+    padding: 0;
+    display: flex;
+  }
+
+  @media(max-width: 1024px){
+    .navbar-links ul {
+        margin-right: 100px;
+    }
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 30px 2rem 30px 2rem;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: rgba(87, 87, 87, 0.788);
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1.4rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: flex;
+      top: 1.7rem;
+    }
+  
+    #navbar .home {
+      margin-left: 1rem;
+    }
+  
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgb(58, 58, 58);
+      text-align: center;
+    }
+  
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .navbar-links ul {
+      margin-right: 0px;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .navbar-links li  {
+      margin: 1rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  
+    .navbar-links li a {
+      margin: 1rem;
+      padding: 0rem 0rem 0rem 0rem;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  }
+
+  .cus-nav {
+      background-color: rgb(58, 58, 58) !important;
+  }
 /* navbar background */
 /* --------------------------------------------------------------- */
 /* Boxes */
@@ -139,7 +266,7 @@ ul
     flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 30px;
-    margin-top: 150px;
+    padding-top: 270px;
     animation-name: example;
     animation-duration: 6s;
 }
